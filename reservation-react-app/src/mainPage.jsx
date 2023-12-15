@@ -16,7 +16,7 @@ function MainPage() {
     }
 
     const moveRewards = () => {
-        navigate('rewards')
+        navigate('/rewards')
     }
 
     return(
