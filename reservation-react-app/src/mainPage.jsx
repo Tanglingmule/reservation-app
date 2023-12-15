@@ -25,9 +25,15 @@ function MainPage() {
                 <CompanyHeader name = 'Tesco'/>
             </div>
             <div id = 'buttons'>
-                <InputButton text={'Make Reservation'} functionToDo={moveMakeReservation}/>
-                <InputButton text={'Delete Reservation'} functionToDo={moveDeleteReservation}/>
-                <InputButton text={'Reward Points'} functionToDo={moveRewards}/>
+                <div>
+                    <InputButton className={'button'} text={'Make Reservation'} functionToDo={moveMakeReservation}/>
+                </div>
+                <div>
+                    <InputButton className={'button'} text={'Delete Reservation'} functionToDo={moveDeleteReservation}/>
+                </div>
+                <div>
+                    <InputButton className={'button'} text={'Reward Points'} functionToDo={moveRewards}/>
+                </div>
             </div>
         </div>
     )

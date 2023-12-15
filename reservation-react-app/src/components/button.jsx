@@ -1,8 +1,12 @@
 import React from "react";
 
-const InputButton = ({ functionToDo, text }) => { // Destructure functionToDo from props
-    return(
-        <input type="button" onClick={functionToDo} value={text} />
-    )
+function InputButton({ text, functionToDo, className }) {
+    return (
+        <button className={className} onClick={functionToDo}>
+            {text}
+        </button>
+    );
 }
+
+
 export default InputButton;

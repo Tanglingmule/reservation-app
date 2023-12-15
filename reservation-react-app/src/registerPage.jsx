@@ -30,6 +30,7 @@ function RegisterPage (){
 
         // If all fields are filled out, you can do whatever you need with the values
         console.log(username, password, email);
+        alert("Successfully Registered")
 
         // If the registration is successful, redirect to the main page
         navigate('/login');
@@ -38,6 +39,11 @@ function RegisterPage (){
     return(
         <div>
         <h1>Register</h1>
+
+        <div className='backgroundImage'>
+        <img src='https://th.bing.com/th/id/OIP.MsEV99SIf-qV0mUDfn1akgHaFg?rs=1&pid=ImgDetMain' />
+
+        </div>
 
         <InputField id = 'email' name='Email' value={email} onChange={e => setEmail(e.target.value)} />
         <InputField id='username' name='Username' value={username} onChange={e => setUsername(e.target.value)} />
