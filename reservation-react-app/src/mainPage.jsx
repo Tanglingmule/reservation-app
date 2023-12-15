@@ -3,6 +3,7 @@ import CompanyHeader from './components/company-header';
 import InputButton from './components/button';
 import './components/mainPage.css'
 import { useNavigate } from 'react-router-dom'; 
+import logo from './components/assets/tesco.jpg'
 
 function MainPage() {
 
@@ -23,6 +24,9 @@ function MainPage() {
         <div>
             <div id = 'companyHead'>
                 <CompanyHeader name = 'Tesco'/>
+            </div>
+            <div className='image'>
+                <img src={logo} alt="Logo" />
             </div>
             <div id = 'buttons'>
                 <div>

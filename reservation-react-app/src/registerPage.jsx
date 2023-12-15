@@ -10,6 +10,17 @@ function RegisterPage (){
 
     let navigate = useNavigate();
 
+    const generateRecovery = () => {
+        let recovery = '';
+        const length = 10;
+        const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+        for (let i = 0; i < length; i++) {
+            recovery += characters.charAt(Math.floor(Math.random() * characters.length));
+        }
+        return recovery;
+    }
+    
+
     const getFields = () => {
 
         if (username === '') {
@@ -29,7 +40,9 @@ function RegisterPage (){
         
 
         // If all fields are filled out, you can do whatever you need with the values
-        console.log(username, password, email);
+        const recovery = generateRecovery();
+        console.log(username, password, email, recovery);
+        alert('Your Recovery key is '+recovery)
         alert("Successfully Registered")
 
         // If the registration is successful, redirect to the main page
@@ -40,10 +53,6 @@ function RegisterPage (){
         <div>
         <h1>Register</h1>
 
-        <div className='backgroundImage'>
-        <img src='https://th.bing.com/th/id/OIP.MsEV99SIf-qV0mUDfn1akgHaFg?rs=1&pid=ImgDetMain' />
-
-        </div>
 
         <InputField id = 'email' name='Email' value={email} onChange={e => setEmail(e.target.value)} />
         <InputField id='username' name='Username' value={username} onChange={e => setUsername(e.target.value)} />

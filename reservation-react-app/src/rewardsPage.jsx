@@ -13,7 +13,10 @@ function RewardsPage (){
     return(
         <div>
             <div>
-                <p>You Have {rewards} Reward Points</p>
+                <center>
+                    <h1>Rewards Points</h1>
+                    <p>You Have {rewards} Reward Points</p>
+                </center>
             </div>
             <div>
                 <InputButton text={'Back To Main Page'} functionToDo={moveMain} />

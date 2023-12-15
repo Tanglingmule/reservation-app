@@ -20,4 +20,12 @@
     background: rgba(0, 75, 158, 0.05);
     cursor: pointer;
 }
+
+.image{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0px;
+}
  

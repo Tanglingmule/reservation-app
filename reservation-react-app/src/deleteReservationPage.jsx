@@ -12,6 +12,7 @@ function DeleteReservationPage (){
 
     return(
         <div>
+            <h1>Delete Reservation</h1>
         <div>
             <ButtonComponent />
         </div>

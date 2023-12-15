@@ -13,6 +13,7 @@ function MakeReservationPage (){
 
     return(
         <div>
+            <h1>Make Reservation</h1>
         <div>
             <ButtonComponent />
         </div>
